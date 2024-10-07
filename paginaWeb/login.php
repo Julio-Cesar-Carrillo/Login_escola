@@ -13,7 +13,7 @@
         </div>
         <div class="login-form">
             <h2>Iniciar Sesión</h2>
-            <form action="login_process.php" method="POST">
+            <form action="./procesos/validaciones.php" method="POST">
                 <div class="input-group">
                     <label for="user">Usuario:</label>
                     <input type="text" id="user" name="user">
