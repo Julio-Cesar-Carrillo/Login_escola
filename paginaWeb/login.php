@@ -15,11 +15,11 @@
             <h2>Iniciar Sesión</h2>
             <form action="login_process.php" method="POST">
                 <div class="input-group">
-                    <label for="user">Usuario</label>
+                    <label for="user">Usuario:</label>
                     <input type="text" id="user" name="user">
                 </div>
                 <div class="input-group">
-                    <label for="pwd">Contraseña</label>
+                    <label for="pwd">Contraseña:</label>
                     <input type="password" id="pwd" name="pwd">
                 </div>
                 <button type="submit">Ingresar</button>
