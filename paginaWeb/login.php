@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div class="container">
         <div class="logo">
-            <img src="logo.png" alt="Logo">
+            <img src="./img/logoJ23.png" alt="Logo">
         </div>
         <div class="login-form">
             <h2>Iniciar Sesión</h2>
