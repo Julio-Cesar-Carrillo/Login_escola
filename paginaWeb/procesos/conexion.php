@@ -1,6 +1,6 @@
 <?php
 
-$servidor = "mysql:dbname=db_escuela_login;host=localhost";
+$servidor = "mysql:dbname=db_escuela;host=localhost";
 $user = "root";
 $pass = "";
 try {
