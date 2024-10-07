@@ -29,7 +29,7 @@ body {
 }
 
 .logo img {
-    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 100px;
 }
 
 .login-form {
@@ -70,7 +70,7 @@ button:hover {
     background-color: #218838;
 }
 
-/* Estilos responsivos */
+/* Estilos resposive */
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
