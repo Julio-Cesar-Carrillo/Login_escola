@@ -1,7 +1,10 @@
 <?php
-// Conexión a la base de datos
+
+$servidor = "mysql:dbname=db_escuela_login;host=localhost";
+$user = "root";
+$pass = "";
 try {
-    $conexion = new PDO('mysql:host=localhost; dbname=db_escuela', 'root', '');
+    $pdo = new PDO($servidor, $user, $pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 } catch (PDOException $e) {
-    echo "Error de conexión -> $e";
+    echo "conexion fallida" . $e->getMessage();
 }
