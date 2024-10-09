@@ -1,5 +1,6 @@
-create database db_escuela;
-use databse db_escuela;
+CREATE DATABASE db_escuela;
+
+USE db_escuela;
 
 CREATE TABLE  tbl_usarios(
 
@@ -27,6 +28,6 @@ INSERT INTO tbl_roles VALUES(
     NULL,'admin'
 );
 
-INSERT INTO tbl_usarios VALUES(
+INSERT INTO tbl_usUarios VALUES(
     NULL,'Juan', 'juan@gmail.com', 1, '1234'
 );
