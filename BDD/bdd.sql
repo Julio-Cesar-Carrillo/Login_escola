@@ -28,6 +28,6 @@ INSERT INTO tbl_roles VALUES(
     NULL,'admin'
 );
 
-INSERT INTO tbl_usUarios VALUES(
+INSERT INTO tbl_usuarios VALUES(
     NULL,'Juan', 'juan@gmail.com', 1, '1234'
 );
