@@ -14,6 +14,6 @@ session_start();
 if ($resultado && password_verify($pwd, $resultado['pwd_user'])) {
     $session['nom'] = $resultado['nom_user'];
 } else {
-    echo "hola esta mal " . $resultado['nom_user'];
+    header("location: ../login.php?nom=" . $user . "&pwd=" . $pwd);
     exit();
 }

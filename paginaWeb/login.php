@@ -9,7 +9,9 @@
 
 <body>
     <form action="./procesos/validaciones.php" method="post">
-        <input type="text" name="user" id="user">
+        <input type="text" name="user" id="user" value="<?php if (isset($_GET['nom'])) {
+                                                            echo $_GET['nom'];
+                                                        } ?>">
         <input type="text" name="pwd" id="pwd">
         <input type="submit" value="Enviar">
     </form>
