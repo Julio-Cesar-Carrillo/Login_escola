@@ -17,11 +17,13 @@
             <form id="loginForm" action="login_process.php" method="POST">
                 <div class="input-group">
                     <label for="user">Usuario:</label>
-                    <input type="text" id="user" name="user">
+                    <input type="text" id="user" name="user" onblur="validarUser()">
+                    <p id="error_user" class="error" style="color:red;"></p><br><br>
                 </div>
                 <div class="input-group">
                     <label for="pwd">Contraseña:</label>
-                    <input type="password" id="pwd" name="pwd">
+                    <input type="password" id="pwd" name="pwd" onblur="validarPwd()">
+                    <p id="error_pwd" class="error" style="color:red;"></p><br><br>
                 </div>
                 <button type="submit">Ingresar</button>
             </form>

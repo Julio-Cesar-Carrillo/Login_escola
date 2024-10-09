@@ -1,42 +1,79 @@
 
-const form = document.getElementById('loginForm');
-const userField = document.getElementById('user');
-const pwdField = document.getElementById('pwd');
+function validarUser() {
+const user = document.getElementById('user');
+const error = document.getElementById('error_user');
+const value = user.value.trim();
+if (value === '') {
+    error.innerText='El usuario no puede estar vacio';
+    
+} else if(!isNaN(value)) {
+    error.innerText='El usuario no puede contener numeros';
 
-
-function contieneCaracteresEspeciales(texto) {
-    const regex = /[^a-zA-Z0-9]/;  
-    return regex.test(texto);
-}
-
-
-function mostrarError(mensaje) {
-    alert(mensaje);
-}
-
-
-form.addEventListener('submit', function (event) {
-    const user = userField.value.trim();
-    const pwd = pwdField.value.trim();
-
- 
-    if (user === "" || pwd === "") {
-        event.preventDefault();  // Detener el envío del formulario
-        mostrarError("Los campos no pueden estar vacíos.");
-        return;
-    }
 
     
-    if (contieneCaracteresEspeciales(pwd)) {
-        event.preventDefault();
-        mostrarError("La contraseña no debe contener caracteres especiales.");
-        return;
-    }
+}else {
+    error.innerText= '';
 
-  
-    if (pwd.length > 20) {
-        event.preventDefault();
-        mostrarError("La contraseña no debe superar los 20 caracteres.");
-        return;
-    }
-});
+
+
+
+
+}
+
+
+    
+}
+
+
+
+function validarPwd() {
+
+const pwd= document.getElementById('pwd')
+const error= document.getElementById('error_pwd');
+const value = pwd.value.trim();
+const contieneCaracteres= /[^a-zA-Z0-9]/; 
+
+if (value === '') {
+    error.innerText='La contraseña no puede estar vacio';
+    
+} else if (value.length < 6) {
+    error.innerText='La contraseña debe de  contener mas de 6 caracteres';
+
+
+}else if (value.length > 20){
+    error.innerText= 'La contraseña no debe de tener mas de 20 caracteres';
+
+}else if(contieneCaracteresEspeciales(value)){
+    error.innerText= 'La contraseña no puede tener caractres especiales';
+
+
+
+    
+}else {
+    error.innerText= '';
+
+
+
+
+
+}
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
