@@ -1,15 +1,11 @@
 <?php
-$host = "localhost"; 
-$usuario = "root";
-$contraseña = "";
-$base_de_datos = "db_escuela"; 
 
-$conexion = new mysqli($host, $usuario, $contraseña, $base_de_datos);
+$servidor = "mysql:dbname=db_escuela;host=localhost";
+$user = "root";
+$pass = "";
 
-if ($conexion->connect_error) {
-    die("Error de conexión: " . $conexion->connect_error);
-} else {
-    echo "Conexión exitosa a la base de datos";
+try {
+    $pdo = new PDO($servidor, $user, $pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+} catch (PDOException $e) {
+    echo "conexion fallida" . $e->getMessage();
 }
-
-?>
