@@ -1,6 +1,6 @@
 create database db_escuela;
 
-use databse db_escuela;
+use db_escuela;
 
 CREATE TABLE  tbl_usuarios(
 id_user INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
