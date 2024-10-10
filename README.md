@@ -1,1 +1,2 @@
-# Login_escola
+Creació d'un login per poder accedir a la part administració d'una pàgina web de Gestió de Notes (que encara no existeix, ni es fa en aquesta part),  amb un aspecte visual fet amb CSS i que sigui responsive.
+Hi haurà una pàgina principal de Login, en principi només pels gestors de notes (professors, educadors, secretaria,...) . Quan el gestor realitzi el login caldrà establir la sessió i mostrar per pantalla quin usuari està logat. El formulari ha de tenir validacions JavaScript i PHP (totes dues).
