@@ -59,16 +59,3 @@ button:hover {
     background-color: #357ABD;
 }
 
-@media (max-width: 600px) {
-    .container {
-        padding: 30px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-}
