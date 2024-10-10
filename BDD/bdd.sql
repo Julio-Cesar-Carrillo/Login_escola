@@ -22,5 +22,5 @@ INSERT INTO tbl_roles VALUES(
     NULL,'admin'
 );
 INSERT INTO tbl_usuarios VALUES(
-    NULL,'Juan', 'juan@gmail.com', 1, '$2y$10$ctjIxC1YPcoqkwg1r1Ipkuax/KTE117YcHp0MCRq.7TmlJIzNq5YO'
+    NULL,'Juan', 'juan@gmail.com', 1, '$2y$10$9006Rj3MzStLFob2tk4d5.XTKZM10y9i7cT15vO9SFwyivBZxlute'
 );
