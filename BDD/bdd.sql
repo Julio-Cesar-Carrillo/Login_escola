@@ -21,6 +21,6 @@ ADD CONSTRAINT fk_usario_roles FOREIGN KEY (rol_user) REFERENCES tbl_roles(id_ro
 INSERT INTO tbl_roles VALUES(
     NULL,'admin'
 );
-INSERT INTO tbl_usarios VALUES(
+INSERT INTO tbl_usuarios VALUES(
     NULL,'Juan', 'juan@gmail.com', 1, '$2y$10$ctjIxC1YPcoqkwg1r1Ipkuax/KTE117YcHp0MCRq.7TmlJIzNq5YO'
 );
