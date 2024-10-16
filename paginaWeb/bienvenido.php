@@ -3,7 +3,7 @@ session_start();
 
 if (!isset($_SESSION['nom'])) {
     // Si no hay una sesión activa, redirigir al login
-    header('Location: ./paginaWeb/bienvenido.php');
+    header('Location: ./login.php');
     exit();
 }
 ?>
