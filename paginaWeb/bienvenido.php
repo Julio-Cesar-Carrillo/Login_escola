@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+session_start(); 
+
+if (!isset($_SESSION['nom'])) {
+    // Si no hay una sesión activa, redirigir al login
+    header('Location: ./paginaWeb/bienvenido.php');
+    exit();
+}
+?>
+<!DOCTYPE html> 
 <html lang="es">
 
 <head>
@@ -10,11 +19,9 @@
 
 <body>
     <div class="container">
-        <h1>Bienvenido, <?php session_start();
-                        echo $_SESSION['nom'];
-                        ?>!</h1>
+        <h1>Bienvenido, <?php echo $_SESSION['nom']; ?>!</h1>
         <p>¡Has iniciado sesión exitosamente!</p>
     </div>
-</body>
+</body>  
 
 </html>
